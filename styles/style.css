@@ -1,0 +1,172 @@
+/*Importa as fontes "Krona One" e "Montserrat" da Google Fonts para serem utilizadas na página.*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/*Define variáveis CSS para cores e fontes que serão utilizadas em toda a página.*/
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #22D4FD;
+  --cor-hover: #272727;
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+/*Reseta as margens e preenchimentos de todos os elementos para garantir uma base consistente.*/
+*{
+    margin: 0;
+   padding: 0;
+}
+
+/*Define o modelo de caixa para border-box e define as cores de fundo e texto para o corpo da página.*/
+body{
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+.cabecalho{
+  padding:2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+  display: flex;
+  gap: 80px;      /*separar com espaço*/
+  position: fixed;
+  
+}
+
+  /*Define estilos para o cabeçalho, incluindo espaçamento, layout do menu e estilos dos links do menu.*/
+  .cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    
+  }
+ 
+  .apresentacao{
+    margin: 5% 15%;        /* adiciona uma margem para centralizar os quadrados na tela*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+  font-size: 2.25rem;
+  font-family: var(--fonte-primaria);
+  }
+
+.titulo-destaque{
+  color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto{
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+}
+
+.redes__sociais{                        /*.apresentacao__links*/
+    display: flex;                      /* coloca os quadrados lado a lado */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;   
+}
+
+.subtitulo{                             /*.apresentacao__links__subtitulo*/
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.redes__sociais__link{                  /*.apresentacao__links__link virou .apresentacao__links__navegacao */
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid var(--cor-terciaria); 
+  width: 378px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-secundaria);
+}
+
+.redes__sociais__link:hover{
+  background-color: var(--cor-hover);
+}
+
+.sublinhado{
+    text-decoration: underline;
+}
+
+/*CURRICULO*/
+.apresentacao__conteudo__texto a{
+  text-decoration: none;
+  color: #22D4FD;
+}
+
+.rodape{
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  padding: 24px;
+  text-align: center;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 700;
+ /* position:fixed;*/
+  bottom: 0;
+  width: 100%;
+}
+
+.imagem_programando{/*apresentacao__imagem*/
+  width: 60%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -60% 50% 50% 20%;
+  border: white;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+.video-programando {
+  display:block;
+  margin: -160% 25vw 10% 37%; /* Ajuste os valores conforme necessário */
+  width: 50vw; /* Alterado para 50% da largura da tela */
+  height: auto; /* Mantém a proporção do vídeo */
+}
+
+.apresentacao__sobre{
+  margin: 2% 2% 10% 5% ;        /* adiciona uma margem para centralizar os quadrados na tela*/
+  display:flex;
+  align-items:flex-end;
+}
+
+.apresentacao__conteudo__sobre{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo__sobre{
+  font-size: 2.25rem;
+  font-family: var(--fonte-primaria);
+  white-space: nowrap;
+}
